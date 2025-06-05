@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Amadou Mamadou Diallo</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script defer src="script.js"></script>
+  <style>
+  #experiences, #projects, #skills, #languages, #interets {
+    background-color: #e6f4ec;
+    border: 1px solid #b3e0cc;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+    animation: fadeInUp 0.8s ease-in-out;
+  }
+
+  #experiences {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  #experiences .experience {
+    display: inline-block;
+    vertical-align: top;
+    white-space: normal;
+    width: 300px;
+    min-height: 280px;
+    margin-right: 1rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    border: 1px solid #d3f3e2;
+    transition: transform 0.3s ease;
+  }
+
+  #experiences .experience:hover {
+    transform: scale(1.02);
+  }
+
+  #experiences h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+  }
+
+  #experiences p {
+    line-height: 1.6;
+    margin-left: 0.5rem;
+  }
+
+  .cv-download {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .cv-download a.btn {
+    background-color: var(--accent-color);
+    color: white;
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+
+  .cv-download a.btn:hover {
+    background-color: var(--primary-color);
+  }
+
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+
+</head>
+<body>
+  <aside class="navbar">
+    <img src="assets/images/profil.jpg" alt="Photo de profil" />
+    <h1>Amadou Mamadou Diallo</h1>
+    <p>Statisticien & Data Scientist</p>
+    <nav>
+      <a href="#about">À propos</a>
+      <a href="#experiences">Expériences</a>
+      <a href="#projects">Projets</a>
+      <a href="#associations">Associations</a>
+      <a href="#skills">Compétences</a>
+      <a href="#languages">Langues</a>
+      <a href="#interets">Centres d’intérêt</a>
+    </nav>
+  </aside>
+
+  <main class="main-content">
+    <section id="about">
+      <h2>À propos</h2>
+      <div class="about-section">
+        <img src="assets/images/profil.jpg" alt="Profil" class="about-photo" />
+        <div class="about-text">
+          <h3>Amadou Mamadou Diallo</h3>
+          <p>Statisticien & Data Scientist passionné par l’analyse des données, la modélisation statistique et les solutions innovantes. Mon objectif est de contribuer au développement par des projets concrets basés sur les données, notamment dans les domaines de l’économie, du social et de l’environnement.</p>
+          <ul class="contact-info">
+            <li><i class="fas fa-map-marker-alt"></i> Arafat 4, Nouakchott, Mauritanie</li>
+            <li><i class="fas fa-phone"></i> +222 41548424</li>
+            <li><i class="fas fa-envelope"></i> 23217@esp.mr</li>
+          </ul>
+          <div class="links">
+            <a href="https://linkedin.com/in/amadou-diallo-ing04" target="_blank">LinkedIn</a>
+            <a href="https://github.com/AmadouMamadouDiallo" target="_blank">GitHub</a>
+            <a href="https://facebook.com/amadou.diallo" target="_blank">Facebook</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<section id="education">
+  <h2>Parcours Académique</h2>
+  <div class="education-item">
+    <h3>Statistique et ingénierie des données</h3>
+    <span>École Supérieure Polytechnique • Oct 2023 – En cours • Nouakchott, Mauritanie</span>
+    <ul>
+      <li>Formation d’ingénieur en statistique, data science et ingénierie des données.</li>
+      <li>Compétences en gestion et analyse de données, modélisation statistique, machine learning.</li>
+      <li>Travaux pratiques sur des cas concrets d’analyse de données.</li>
+    </ul>
+  </div>
+
+  <div class="education-item">
+    <h3>Licence en statistique</h3>
+    <span>Institut supérieur des métiers de la statistique • Oct 2020 – Juin 2023 • Nouakchott, Mauritanie</span>
+    <ul>
+      <li>Formation de 3 ans axée sur l’analyse des données et les applications statistiques.</li>
+      <li>Maîtrise des outils de traitement de données et des méthodes d’analyse statistique.</li>
+    </ul>
+  </div>
+
+  <div class="education-item">
+    <h3>Baccalauréat série mathématiques</h3>
+    <span>École Bailly • Oct 2019 – Juin 2020 • Nouakchott, Mauritanie</span>
+    <ul>
+      <li>Formation orientée mathématiques avancées, physique et chimie.</li>
+      <li>Développement des compétences analytiques et en résolution de problèmes.</li>
+    </ul>
+  </div>
+</section>
+
+
+
+    <section id="experiences">
+      <div class="cv-download">
+        <h2>Expériences Professionnelles</h2>
+        <a href="assets/cv-amadou.pdf" download class="btn"><i class="fas fa-download"></i> Télécharger le CV</a>
+      </div>
+
+      <div class="experience">
+        <h3>Data Analyste – Kinross Tasiast (10 juillet – 09 août 2024, Inchiri)</h3>
+        <p>J’ai réalisé des analyses de données pour le département Continuous Improvement. À l’aide d’outils comme Python et Power BI, j’ai identifié des inefficacités dans les processus opérationnels de l’entreprise minière. J’ai produit des rapports hebdomadaires destinés aux parties prenantes et participé à la création d’un tableau de bord interactif pour le suivi de la performance.</p>
+      </div>
+
+      <div class="experience">
+        <h3>Statisticien et gestionnaire d’enquête – GREG (10 – 18 août 2023, Nouakchott)</h3>
+        <p>En tant que responsable de terrain, j’ai conduit une enquête auprès de 300 jeunes afin de mieux comprendre les défis liés à leur insertion professionnelle. J’ai collecté et analysé des données quantitatives et qualitatives, ce qui a permis d’identifier les obstacles majeurs à leur employabilité et de produire un rapport stratégique avec recommandations.</p>
+      </div>
+
+      <div class="experience">
+        <h3>Stage de fin d’études – Agence Techghil (février – juin 2023, Nouakchott)</h3>
+        <p>Pour mon projet de fin de licence, j’ai étudié les facteurs du chômage chez les jeunes âgés de 18 à 30 ans. J’ai mobilisé des méthodes statistiques avancées telles que la régression logistique et l’analyse factorielle pour dégager les variables les plus influentes. J’ai aussi rédigé un rapport incluant des politiques de réduction du chômage ciblées.</p>
+      </div>
+
+      <div class="experience">
+        <h3>Statisticien/Économiste – Enquête Zaakat (juin – juillet 2022, Nouakchott)</h3>
+        <p>Dans le cadre d’une enquête sur l’impact de la Zaakat, j’ai collecté des données auprès de 200 ménages mauritaniens. Mon analyse visait à déterminer comment cette pratique religieuse influençait le bien-être économique des familles. Le rapport final incluait des indicateurs d’impact, des graphiques dynamiques et des recommandations pour l’amélioration du dispositif.</p>
+      </div>
+
+      <div class="experience">
+        <h3>Statisticien – ANSADE (avril – juin 2022, Nouakchott)</h3>
+        <p>J’ai contribué à une étude de grande ampleur sur l’impact de l’inflation sur les conditions de vie des ménages mauritaniens. J’ai traité des données économiques et sociales longitudinales, et participé à la conception d’un protocole de suivi annuel pour mieux comprendre les évolutions du pouvoir d’achat dans le temps.</p>
+      </div>
+    </section>
+
+    <section id="projects">
+  <h2>Projets Réalisés</h2>
+
+  <div class="project">
+    <h3>Système de détection des trafics routiers</h3>
+    <span>Projet industriel et entreprise • Oct. 2023 – en cours • Nouakchott, Mauritanie</span>
+    <ul>
+      <li>Développement d’un système intelligent de détection du trafic basé sur des capteurs physiques et de la vision par ordinateur.</li>
+      <li>Analyse des données collectées pour détecter les points de congestion.</li>
+      <li>Proposition de recommandations pour optimiser la circulation urbaine.</li>
+    </ul>
+  </div>
+
+  <div class="project">
+    <h3>Plateforme de suivi de l’indice de prix à la consommation</h3>
+    <span>Projet Django • Déc. 2024 – Jan. 2025 • Nouakchott, Mauritanie</span>
+    <ul>
+      <li>Développement d’une plateforme web dynamique pour le suivi de l’IPC.</li>
+      <li>Collecte, traitement et affichage en temps réel des données sur les prix.</li>
+      <li>Compétences mobilisées : Python, Django, base de données PostgreSQL.</li>
+    </ul>
+  </div>
+
+  <div class="project">
+    <h3>JAM-WEELS – Transport sécurisé pour élèves</h3>
+    <span>JAM-SOLUTIONS • Oct. 2023 – en cours • Nouakchott, Mauritanie</span>
+    <ul>
+      <li>Co-fondateur d’un projet social pour sécuriser les trajets scolaires des enfants.</li>
+      <li>Déploiement d’un système de réservation et de géolocalisation des trajets.</li>
+      <li>Rôle principal : gestion de projet, encadrement technique, communication.</li>
+    </ul>
+  </div>
+
+  <div class="project">
+    <h3>Plateforme d’aide à la décision pour les agriculteurs</h3>
+    <span>Projet entrepreneuriat et innovation • Oct. 2023 – Juin 2024 • Nouakchott, Mauritanie</span>
+    <ul>
+      <li>Conception d’un outil d’aide à la décision pour la gestion intelligente de l’irrigation.</li>
+      <li>Capteurs d’humidité du sol + algorithmes de prédiction.</li>
+      <li>Technologies : Python, Arduino, IoT, HTML/CSS/JS.</li>
+    </ul>
+  </div>
+
+  <div class="project">
+    <h3>Plateforme de gestion pédagogique</h3>
+    <span>Projet bases de données avancées • Déc. 2022 – Fév. 2023 • Nouakchott, Mauritanie</span>
+    <ul>
+      <li>Création d’une application web pour organiser les emplois du temps et les enseignements.</li>
+      <li>Automatisation de la planification des cours, interface utilisateur simple.</li>
+      <li>Technos : Python, HTML/CSS, JavaScript.</li>
+    </ul>
+  </div>
+</section>
+
+
+    <section id="associations">
+  <h2>Vie Associative</h2>
+  <ul>
+    <li>
+      <strong>RIM Youth Climate Movement</strong>
+      <p>En tant que chargé de l’organisation d’événements depuis juin 2023, je m’implique activement dans des projets de sensibilisation aux enjeux climatiques. J’ai coordonné plusieurs campagnes locales de reboisement et des ateliers de formation pour la jeunesse sur le développement durable. Je contribue également à la gestion logistique des événements nationaux et à la mobilisation des bénévoles.</p>
+    </li>
+    <li>
+      <strong>Association des jeunes de Sélibaby</strong>
+      <p>Co-fondateur de cette association active depuis 2017, je participe à la mise en œuvre d’activités éducatives et culturelles à destination des jeunes. J’ai organisé des cours de soutien scolaire pendant les vacances, des tournois sportifs pour renforcer la cohésion communautaire, et des journées de sensibilisation sur la citoyenneté et l’entrepreneuriat local.</p>
+    </li>
+  </ul>
+</section>
+
+
+    <section id="skills">
+  <h2>Compétences</h2>
+  <ul>
+    <li><strong>Langages :</strong> Python, R, Scala, Java, C, HTML/CSS</li>
+    <li><strong>Logiciels :</strong> Power BI, SAS, Stata, SPSS, EViews, Excel, Word</li>
+  </ul>
+</section>
+
+
+    <section id="languages">
+  <h2>Langues</h2>
+  <ul>
+    <li><strong>Français :</strong> Courant </li>
+    <li><strong>Arabe :</strong> Courant</li>
+    <li><strong>Anglais :</strong>  intermédiaire</li>
+  </ul>
+</section>
+
+
+    <section id="interets">
+      <h2>Centres d’intérêt</h2>
+      <p>Voyage, culture, football, innovation technologique</p>
+    </section>
+  </main>
+</body>
+</html>
